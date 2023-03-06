@@ -13,8 +13,8 @@
 
 ## Getting started
 
--   npm i
--   npm run dev to open localhost
+    - npm i
+    - npm run dev (to open localhost)
 
 
 ## 📞 Contato
