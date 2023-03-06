@@ -1,0 +1,293 @@
+.container-main {
+    max-width: 100%;
+    margin: 40px 130px;
+
+    .title-form {
+        font-size: 32px;
+    }
+
+    .form {
+        display: flex;
+
+        .form-img-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            width: 29%;
+            height: 24%;
+            position: relative;
+            border: 2px solid $gray-100;
+            border-radius: 8px;
+
+            .input-img {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 212px;
+                cursor: pointer;
+                letter-spacing: 0.15px;
+                line-height: 24px;
+                color: $gray;
+
+                .form-input-img {
+                    display: none;
+                }
+
+                .preview-img-input {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        .form-description-wrapper {
+            max-width: 440px;
+
+            .form-title {
+                border: 2px solid $gray-200;
+                border-radius: 8px;
+                margin: 40px 0 20px 20px;
+                padding: 16px;
+                height: 56px;
+                width: 343px;
+            }
+
+            .input-descricao {
+                border: 2px solid $gray-200;
+                border-radius: 8px;
+                margin: 0 0 20px 20px;
+                padding: 40px 0 72px 20px;
+                resize: none;
+                height: 136px;
+                width: 417px;
+            }
+
+            .form-btn {
+                display: flex;
+                justify-content: flex-end;
+
+                .sub-btn {
+                    border: none;
+                    border-radius: 8px;
+                    padding: 16px 20px;
+                    color: $white;
+                    background: $btn-color;
+                    cursor: pointer;
+                    transition: 0.2s linear;
+                    &:hover {
+                        background-color: $btn-color-100;
+                    }
+                    &:active {
+                        background-color: $btn-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.container-list {
+    max-width: 100%;
+    margin: 40px 130px;
+    margin-bottom: 38px;
+}
+
+.main-description-cards {
+    max-width: 100%;
+    margin: 40px 130px;
+    .container-item-list {
+        display: flex;
+        width: 100%;
+
+        .item-list {
+            border-radius: 8px;
+            background-color: $white;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+            margin-right: 21px;
+            width: 100%;
+
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        .image-item-list {
+            width: 100%;
+            height: 212px;
+            border-radius: 8px;
+        }
+
+        .title-item-list {
+            margin: 24px;
+            height: 60px;
+            overflow-y: scroll;
+            word-wrap: break-word;
+            overflow: auto;
+        }
+
+        .description-item-list {
+            color: $gray;
+            line-height: 24px;
+            margin: 8px 24px 24px 24px;
+            font-family: "Roboto", sans-serif;
+            height: 120px;
+            width: 206px;
+            word-wrap: break-word;
+            overflow-y: scroll;
+            overflow: auto;
+        }
+    }
+}
+
+@media (min-width: 2500px) {
+    .main {
+        .title-form,
+        .title-list {
+            font-size: 64px;
+        }
+        .form {
+            .input-img,
+            .form-title::placeholder,
+            .input-descricao::placeholder {
+                font-size: 32px;
+                line-height: 48px;
+                font-weight: 400;
+                letter-spacing: 0.15px;
+            }
+            .form-img-wrapper {
+                min-width: 600px;
+                min-height: 400px;
+                .input-img {
+                    min-height: 400px;
+                }
+            }
+
+            .form-description-wrapper {
+                min-width: 750px;
+                .form-title {
+                    min-width: 576px;
+                    min-height: 64px;
+                    padding: 10px 0 10px 16px;
+                }
+                .input-descricao {
+                    min-width: 725px;
+                    min-height: 320px;
+                }
+
+                .sub-btn {
+                    font-size: 32px;
+                    line-height: 48px;
+                }
+            }
+        }
+        .item-list {
+            .image-item-list {
+                height: 400px;
+            }
+            .title-item-list {
+                font-size: 48px;
+                height: 120px;
+                width: 496px;
+            }
+            .description-item-list {
+                font-size: 32px;
+                line-height: 48px;
+                width: 496px;
+                height: 192px;
+            }
+        }
+    }
+}
+
+@media (min-width: 2100px) and (max-width: 2499px) {
+}
+
+@media (max-width: 1024px) {
+    .container-main {
+        max-width: 100%;
+        margin: 40px 16px 0 16px;
+
+        .form {
+            flex-direction: column;
+
+            .form-img-wrapper {
+                width: 100%;
+                height: 570px;
+
+                .input-img {
+                    height: 570px;
+                    border-radius: 8px;
+
+                    .preview-img-input {
+                        height: 570px;
+                    }
+                }
+            }
+
+            .form-description-wrapper {
+                max-width: 100%;
+
+                .form-title {
+                    width: 100%;
+                    margin: 16px 16px 0 0;
+                }
+                .input-descricao {
+                    width: 100%;
+                    margin: 16px 16px 0 0;
+                }
+            }
+
+            .form-description-wrapper {
+                max-width: 100%;
+
+                .form-btn {
+                    .sub-btn {
+                        width: 100%;
+                        margin: 16px 0 60px 0;
+                        transition: 0.2s linear;
+                    }
+                }
+            }
+        }
+    }
+    .container-list {
+        margin: 0 0 32px 16px;
+    }
+
+    .main-description-cards {
+        width: 100%;
+        margin: 16px 16px 0 0;
+
+        .container-item-list {
+            display: flex;
+            flex-direction: column;
+            padding: 0 16px;
+            gap: 21px;
+            .item-list {
+                margin-right: 0px;
+            }
+
+            .image-item-list {
+                display: block;
+                width: 100%;
+                height: 570px;
+            }
+            .description-item-list {
+                width: 100%;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 491px) {
+    .container-item-list {
+        .image-item-list {
+            height: 212px;
+        }
+    }
+}

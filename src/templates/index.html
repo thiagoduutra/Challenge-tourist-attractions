@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Tourist Attractions</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+
+    <main class="main">
+      <section class="container-main">
+        <h1 class="title-form" data-test="title-form">
+          Adicionar um Ponto Turístico
+        </h1>
+        <form class="main-form form">
+          <div class="form-img-wrapper">
+            <label class="input-img" for="form-input-img">
+              <input
+              id="form-input-img"
+              class="form-input-img"
+              type="file"
+              name="file"
+              accept="image/*"
+              data-test="input-img"
+              />
+              <img src="" alt="" data-test="input-image" id="preview-img-input" class="preview-img-input">
+              Imagem
+              </img>
+            </label>
+          </div>
+
+          <div class="form-description-wrapper">
+            <input
+              id="ftitle"
+              class="form-title"
+              name="ftitle"
+              type="text"
+              data-test="input-titulo"
+              placeholder="Título"
+            />
+            <textarea
+              id="ftextarea"
+              name="ftextarea"
+              class="input-descricao"
+              placeholder="Descrição"
+              data-test="input-descricao"
+            ></textarea>
+            <div class="form-btn">
+              <button class="sub-btn" data-test="button-submit" type="submit">
+                Adicionar
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div  class="container-list">
+        <div class="main-title-list">
+          <h1 class="title-list" data-test="title-list">Pontos Turísticos</h1>
+        </div>
+      </div>
+
+      <section  class="main-description-cards">
+        <div data-test="container-item-list" class="container-item-list">
+
+        </div>
+      </section>
+    </main>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="module" src="bundle.js"></script>
+  </body>
+</html>
